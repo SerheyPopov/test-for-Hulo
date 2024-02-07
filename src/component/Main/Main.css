@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #383838;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #b71e1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80px;
+}
+
+.button-container button:hover {
+    background-color: #e81a1a;
+}
+
+.slider-container {
+    width: 100%;
+    max-width: 1400px;
+}
+
+.slider-item-container {
+    background-color: #484848;
+    width: 300px;
+    border-radius: 10px;
+    height: 500px;
+    transition: transform 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.slider-item-container:hover {
+    box-shadow: rgba(255, 255, 255, 0.8) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.slider-item-container img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 300px;
+    height: 450px;
+}
+
+.slider-item-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 300px;
+    color: #d0cfcf;
+}
+
+.modal-video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-video-overlay {
+    position: relative;
+    background-color: #000;
+    width: 90vh;
+    height: 90vh;
+}
+
+.modal-video-overlay p {
+    color: #fff;
+    position: absolute;
+    margin: 0;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pagination-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pagination-item {
+    margin: 0 5px;
+}
+
+.pagination-button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #787878;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.pagination-button.active {
+    background-color: #b71e1e;
+    width: 20px;
+    height: 20px;
+}
